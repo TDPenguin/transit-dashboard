@@ -3,15 +3,62 @@
 <head>
     <meta charset="UTF-8"> <!-- Sets the character encoding (UTF-8 is standard) -->
     <title>Transit Dashboard</title> <!-- The text shown in the browser tab -->
+    <style>
+        /* Main body styles: sets font, margin, and uses CSS grid for layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr; /* Two columns: left (1 part), right (2 parts) */
+            gap: 20px; /* Space between columns */
+        }
+
+        /* Left panel: holds the station list */
+        #left-panel {
+            border-right: 1px solid #ccc; /* Vertical line between panels */
+            padding-right: 20px;
+        }
+
+        /* Right panel: holds station details */
+        #station-details {
+            padding: 20px;
+            background-color: #f5f5f5; /* Light gray background */
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        /* Station list styles */
+        #stations {
+            list-style: none; /* No bullets */
+            padding: 0;
+        }
+
+        /* Each station in the list */
+        #stations li {
+            padding: 8px;
+            margin: 4px 0;
+        }
+
+        /* Hover effect for station list items */
+        #stations li:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
 </head>
 <body>
-    <h1>WMATA Stations</h1> <!-- Main heading on the page -->
+    <!-- Left panel: shows the list of stations -->
+    <div id="left-panel">
+        <h1>WMATA Stations</h1>
+        <ul id="stations"></ul> <!-- This is where station <li> elements will go -->
+    </div>
 
-    <!-- This is an unordered list (bulleted list). 
-         Each station will be added as a <li> (list item) inside this <ul>. -->
-    <ul id="stations"></ul> 
+    <!-- Right panel: shows details for the selected station -->
+    <div id="right-panel">
+        <div id="station-details">
+            <p>Click on a station to view details</p> <!-- Placeholder text before a station is selected -->
+        </div>
+    </div>
 
-    <!-- This is where your JavaScript will go to fetch and display stations -->
+    <!-- Loads the compiled JavaScript (from TypeScript) that fetches and displays stations -->
     <script type="module" src="dist/script.js"></script> <!-- Compiled TS -->
 </body>
 </html>

@@ -1,0 +1,128 @@
+/* WMATA Transit Dashboard - Official Brand Guidelines */
+
+/* Main body styles */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Arial is WMATA's web-safe font */
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    color: #1a1a1a;
+}
+
+/* Header with WMATA Red (Primary Rail) */
+h1 {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 20px;
+    background-color: #BF0D3E; /* WMATA Red (RD) - RGB: 191, 13, 62 */
+    color: white;
+    font-size: 24px;
+    font-weight: bold; /* Arial Bold */
+}
+
+/* Left panel: station list */
+#left-panel {
+    border-right: 2px solid #ddd;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f8f8f8;
+}
+
+#left-panel h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold; /* Arial Bold for sub-headings */
+}
+
+/* Right panel: map and details */
+#right-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Map */
+#map {
+    flex: 1;
+    min-height: 400px;
+}
+
+/* Station details panel */
+#station-details {
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: 3px solid #BF0D3E; /* WMATA Red accent */
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+#station-details h2 {
+    margin-top: 0;
+    color: #BF0D3E;
+    font-size: 20px;
+    font-weight: bold; /* Arial Bold */
+}
+
+#station-details p {
+    margin: 8px 0;
+    line-height: 1.6;
+    font-weight: normal; /* Arial Regular for body text */
+}
+
+#station-details strong {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Station list */
+#stations {
+    list-style: none;
+    padding: 0;
+}
+
+/* Station list items */
+#stations li {
+    padding: 10px 12px;
+    margin: 6px 0;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #1a1a1a;
+    font-weight: normal; /* Arial Regular */
+    transition: all 0.15s ease;
+    background-color: white;
+    border-left: 3px solid #ddd;
+}
+
+/* Hover effect with WMATA Red */
+#stations li:hover {
+    background-color: #BF0D3E;
+    color: white;
+    border-left-color: #8B0A2E;
+    transform: translateX(4px);
+}
+
+/* Scrollbar styling */
+#left-panel::-webkit-scrollbar,
+#station-details::-webkit-scrollbar {
+    width: 8px;
+}
+
+#left-panel::-webkit-scrollbar-track,
+#station-details::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#left-panel::-webkit-scrollbar-thumb,
+#station-details::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 4px;
+}
+
+#left-panel::-webkit-scrollbar-thumb:hover,
+#station-details::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+

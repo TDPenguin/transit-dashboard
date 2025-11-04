@@ -1,17 +1,16 @@
 # WMATA Transit Dashboard
 
-A web dashboard for exploring Washington Metro stations and entrances on an interactive map. Built with Go, TypeScript, and Leaflet.js as a learning project.
+A real-time web dashboard for exploring Washington Metro stations with live train predictions. Built with Go, TypeScript, and Leaflet.js as a learning project.
 
 ## Features
-- Interactive map showing all WMATA rail stations
-- Station details with line information and addresses
-- Station entrance locations displayed as markers
-- Server-side caching (24-hour refresh)
-- Sequential API fetching (no rate limiting issues)
+- **Live train predictions** with auto-refresh (10-second updates)
+- **Interactive map** showing all WMATA rail stations and entrances
+- **Two-column track display** with platform-grouped, scrollable predictions
+- **Station details** with line badges, addresses, and entrance locations
 
 ## Stack
-- **Backend**: Go (net/http, server-side caching with mutex)
-- **Frontend**: TypeScript, Leaflet.js
+- **Backend**: Go (net/http, mutex-protected caching, GeoJSON support)
+- **Frontend**: TypeScript (ES modules), Leaflet.js, CSS Grid
 - **Data**: WMATA Rail API
 
 ## Setup
@@ -47,59 +46,37 @@ npm install
 **Terminal 1 - Backend:**
 ```bash
 cd backend
-go run main.go
+go run .
 ```
 
-**Terminal 2 - Frontend:**
+**Terminal 2 - Frontend (optional, for development):**
 ```bash
 cd frontend
-npm run build
-npx serve .
+npm run watch
 ```
 
-Open http://localhost:3000
+Open http://localhost:8080
 
 ## Project Structure
 ```
 backend/
   ├── main.go           # Entry point, server setup
-  ├── types.go          # All structs for data
-  ├── cache.go          # Caching logic
-  ├── handlers.go       # HTTP handlers
+  ├── types.go          # All structs for API data
+  ├── cache.go          # Caching with auto-refresh
+  ├── handlers.go       # HTTP handlers & CORS
   └── .env              # API key (gitignored)
 
 frontend/
   ├── index.html        # Page structure
-  ├── script.ts         # TypeScript logic
   ├── style.css         # WMATA-themed styling
+  ├── types.ts          # TypeScript interfaces
+  ├── utils.ts          # Constants and helpers
+  ├── api.ts            # Backend API calls
+  ├── ui.ts             # HTML rendering
+  ├── script.ts         # Main application logic
   ├── tsconfig.json     # TypeScript config
   └── package.json      # Dependencies
 ```
-
-## How It Works
-
-### Caching Strategy
-- Pre-warms cache on server startup
-- Fetches all 91+ stations sequentially (avoids rate limits)
-- Cache duration: 24 hours
-- Shared across all users (server-side)
-
-### API Endpoints
-- `GET /stations` - Returns all station details (cached)
-- `GET /entrances?code=XXX` - Returns entrances for a station (cached)
-
-### Frontend Flow
-1. Fetch all stations on page load
-2. Display markers on map + list in sidebar
-3. Click station → fetch entrances → show orange circle markers
-4. Pan to station (keeps zoom if already close)
-
-## TODO
-- [ ] WMATA brand colors/styling
-- [ ] Live train arrivals
-- [ ] Bus stop data
-- [ ] Mobile responsive design
-- [ ] Production deployment
 
 ## License
 MIT

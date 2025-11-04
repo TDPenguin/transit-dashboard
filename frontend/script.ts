@@ -1,106 +1,126 @@
+// Main entry point for transit dashboard
+
+import type { StationInfo } from './types.js';
+import { getTimestamp, getStationCodes, LINE_COLORS } from './utils.js';
+import { fetchTrainPredictions, loadStationLocations, fetchAllStations, fetchEntrances, fetchRailLines } from './api.js';
+import { buildTrainPredictionsHTML } from './ui.js';
+
 declare const L: typeof import('leaflet');
 
-// Station struct: describes basic station info
-interface Station {
-    Name: string; // like field: String in Rust struct
-    Code: string; // like field: String in Rust struct
-}
-
-// Address struct: describes address fields
-interface Address {
-    City: string;
-    State: string;
-    Street: string;
-    Zip: string;
-}
-
-// StationInfo struct: detailed information about a station
-interface StationInfo {
-    Address: Address;
-    Code: string;
-    Lat: number;
-    Lon: number;
-    LineCode1: string;
-    LineCode2: string;
-    LineCode3: string;
-    LineCode4: string;
-    Name: string;
-    StationTogether1: string;
-    StationTogether2: string;
-}
-
-// StationEntrance struct: information about a station entrance
-interface StationEntrance {
-    Description: string;
-    ID: string;
-    Lat: number;
-    Lon: number;
-    Name: string;
-    StationCode1: string;
-    StationCode2: string;
-}
-
-// Global variable to store map and markers
+// Global state
 let map: any;
-let markers: { [key: string]: any } = {}; // Dictionary mapping station codes to markers
-let entranceMarkers: any[] = []; // Array to store entrance markers (cleared when selecting new station)
+let markers: { [key: string]: any } = {};
+let entranceMarkers: any[] = [];
+let allStations: { [key: string]: StationInfo } = {};
+let currentStationCode: string | null = null;
+let currentStationInfo: StationInfo | null = null;
+let predictionRefreshInterval: number | null = null;
+
+// Helper to create circle markers (reduces duplication)
+function createCircleMarker(coords: [number, number], color: string, name: string, onClick?: () => void) {
+    const marker = L.circleMarker(coords, {
+        radius: 5,
+        fillColor: color,
+        color: color === '#0066cc' ? '#ffffff' : color,
+        weight: color === '#0066cc' ? 1 : 2,
+        opacity: 1,
+        fillOpacity: 0.8
+    }).addTo(map);
+    marker.bindTooltip(name, { permanent: false, direction: 'top' });
+    if (onClick) marker.on('click', onClick);
+    return marker;
+}
+
+// Helper to get all line codes from station and connected platforms
+function getAllLineCodes(stationInfo: StationInfo): string[] {
+    const lines: string[] = [stationInfo.LineCode1, stationInfo.LineCode2, stationInfo.LineCode3, stationInfo.LineCode4];
+    [stationInfo.StationTogether1, stationInfo.StationTogether2].forEach(code => {
+        if (code && allStations[code]) {
+            const together = allStations[code];
+            lines.push(together.LineCode1, together.LineCode2, together.LineCode3, together.LineCode4);
+        }
+    });
+    return [...new Set(lines.filter(line => line && line.trim() !== ""))];
+}
+
+// Start prediction refresh timer for current station
+function startPredictionRefresh() {
+    // Clear any existing interval first
+    if (predictionRefreshInterval !== null) {
+        clearInterval(predictionRefreshInterval);
+        predictionRefreshInterval = null;
+    }
+    
+    // Only start if we have a station selected
+    if (!currentStationCode || !currentStationInfo) return;
+    
+    predictionRefreshInterval = window.setInterval(async () => {
+        if (currentStationCode && currentStationInfo) {
+            console.log(`[${getTimestamp()}] [Auto-Refresh] Updating predictions for ${currentStationInfo.Name}`);
+            await updatePredictions(currentStationCode, currentStationInfo);
+        }
+    }, 10000); // 10 seconds
+}
+
+// Stop prediction refresh timer
+function stopPredictionRefresh() {
+    if (predictionRefreshInterval !== null) {
+        clearInterval(predictionRefreshInterval);
+        predictionRefreshInterval = null;
+    }
+}
 
 // Initialize the map centered on Metro Center
 function initMap() {
-    // Center on Metro Center station
-    map = L.map('map').setView([38.898303, -77.028099], 11); // 11 is the zoom.
-
-    // Add OpenStreetMap tiles
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors',
-        maxZoom: 19
+    map = L.map('map').setView([38.898303, -77.028099], 11); // 11 is the zoom level
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 20
     }).addTo(map);
 }
 
 // Fetch all stations and display them
 async function fetchStations() {
     try {
-        const res = await fetch("http://localhost:8080/stations");
-
-        // !res.ok means the HTTP status was not 2xx, like if !res.status().is_success() in Rust
-        // throw is like panic! but can be caught (unlike panic! in Rust, which usually aborts)
-        if (!res.ok) throw new Error("Failed to fetch stations");
-        // If !res.ok is true, throw new Error(...) runs, and the rest of the code in the try block is skipped.
-
-        const stations: StationInfo[] = await res.json(); // Get full StationInfo
+        console.log(`[${getTimestamp()}] [Stations] Loading...`);
+        const stationCoords = await loadStationLocations();
+        const stations = await fetchAllStations();
+        console.log(`[${getTimestamp()}] [Stations] Loaded ${stations.length} stations`);
 
         const list = document.getElementById("stations");
-        if (!list) return; // If list does not exist, return (like if let Some(list) = ... in Rust, else return)
-
+        if (!list) return;
         list.innerHTML = ""; // Clear any existing items (reset the list)
 
-        // For each station, add it to both the list and the map
-        // No more slow individual API calls!
+        // Store all stations in global dictionary for lookup
+        for (const station of stations) allStations[station.Code] = station;
+
+        // Deduplicate stations by name (some stations appear twice as different platforms)
+        const uniqueStations = new Map<string, StationInfo>();
         for (const station of stations) {
+            if (!uniqueStations.has(station.Name)) uniqueStations.set(station.Name, station);
+        }
+
+        // Sort stations alphabetically by name
+        const sortedStations = Array.from(uniqueStations.values()).sort((a, b) => a.Name.localeCompare(b.Name));
+
+        // For each unique station, add it to both the list and the map
+        for (const station of sortedStations) {
             // Add to list
             const li = document.createElement("li");
-            li.textContent = `${station.Name} (${station.Code})`;
-
-            // Make the station clickable
-            // When clicked it will display detailed info
+            li.textContent = station.Name;
+            
+            // Make the station clickable - When clicked it will display detailed info
             li.style.cursor = "pointer";
             li.style.color = "blue";
             li.style.textDecoration = "underline";
-
             li.onclick = () => selectStation(station.Code, station);
-
             list.appendChild(li);
 
-            // Add marker to map - we have coords
-            if (station.Lat && station.Lon) {
-                const marker = L.marker([station.Lat, station.Lon]).addTo(map);
-                marker.bindTooltip(station.Name, { permanent: false, direction: 'top' });
-                
-                // When you click the marker, show station details
-                marker.on('click', () => selectStation(station.Code, station));
-                
-                // Store marker for later use
-                markers[station.Code] = marker;
+            // Use GeoJSON coordinates if available, fallback to API coordinates
+            const coords = stationCoords.get(station.Name) || [station.Lat, station.Lon];
+            if (coords[0] && coords[1]) {
+                markers[station.Code] = createCircleMarker(coords, '#0066cc', station.Name, () => selectStation(station.Code, station));
             }
         }
     } catch (err) {
@@ -109,87 +129,159 @@ async function fetchStations() {
 }
 
 // Select a station and display its details
-// Always have the info from the initial fetch, so no need for another API call
 async function selectStation(stationCode: string, stationInfo: StationInfo) {
+    console.log(`[${getTimestamp()}] [Station] Selected: ${stationInfo.Name} (${stationCode})`);
+    
+    // Store current station for auto-refresh
+    currentStationCode = stationCode;
+    currentStationInfo = stationInfo;
+    
     // Clear previous entrance markers from the map
     entranceMarkers.forEach(marker => map.removeLayer(marker));
     entranceMarkers = [];
 
-    // Display the info in the details div
-    const detailsDiv = document.getElementById("station-details");
+    const detailsDiv = document.getElementById("station-details-content");
     if (!detailsDiv) return;
 
-    // Build a list of line codes (filter out empty ones)
-    const lines = [stationInfo.LineCode1, stationInfo.LineCode2, stationInfo.LineCode3, stationInfo.LineCode4]
-        .filter(line => line !== "");
+    const closeBtn = document.getElementById("close-details");
+    if (closeBtn) closeBtn.style.display = "block";
+
+    // Get all unique line codes from this station and connected platforms
+    const uniqueLines = getAllLineCodes(stationInfo);
     
     // Fetch entrances for this station
     let entrancesHTML = "";
     try {
-        const res = await fetch(`http://localhost:8080/entrances?code=${stationCode}`);
-        if (res.ok) {
-            const entrances: StationEntrance[] = await res.json();
-            if (entrances.length > 0) {
-                entrancesHTML = `
-                    <p><strong>Entrances (${entrances.length}):</strong></p>
-                    <ul style="margin: 0; padding-left: 20px;">
-                        ${entrances.map(e => `<li>${e.Name}</li>`).join('')}
-                    </ul>
-                `;
+        const entrances = await fetchEntrances(stationCode);
+        console.log(`[${getTimestamp()}] [Entrances] Found ${entrances.length} entrance(s)`);
+        if (entrances.length > 0) {
+            entrancesHTML = `
+                <p><strong>Entrances (${entrances.length}):</strong></p>
+                <ul style="margin: 0; padding-left: 20px;">
+                    ${entrances.map(e => `<li>${e.Name}</li>`).join('')}
+                </ul>
+            `;
 
-                // Add entrance markers to the map as small circle markers
-                entrances.forEach(entrance => {
-                    if (entrance.Lat && entrance.Lon) {
-                        const entranceMarker = L.circleMarker([entrance.Lat, entrance.Lon], {
-                            radius: 5,           // Small circle
-                            color: '#ff7800',    // Orange border
-                            fillColor: '#ff7800', // Orange fill
-                            fillOpacity: 0.8,
-                            weight: 2
-                        }).addTo(map);
-
-                        // Add tooltip showing entrance name
-                        entranceMarker.bindTooltip(entrance.Name, { 
-                            permanent: false, 
-                            direction: 'top' 
-                        });
-
-                        // Store marker so we can remove it later
-                        entranceMarkers.push(entranceMarker);
-                    }
-                });
-            }
+            // Add entrance markers to the map
+            entrances.forEach(entrance => {
+                if (entrance.Lat && entrance.Lon) {
+                    entranceMarkers.push(createCircleMarker([entrance.Lat, entrance.Lon], '#ff7800', entrance.Name));
+                }
+            });
         }
     } catch (err) {
         console.error("Error fetching entrances:", err);
     }
     
+    // Fetch train predictions
+    const predictions = await fetchTrainPredictions(getStationCodes(stationInfo));
+    console.log(`[${getTimestamp()}] [Predictions] Fetch completed`);
+    const predictionsHTML = buildTrainPredictionsHTML(predictions);
+
+    // Build line badges HTML
+    const lineBadgesHTML = uniqueLines.map(line => 
+        `<img src="assets/${line}.svg" alt="${line}" style="height: 20px; width: 20px; margin-right: 4px;">`
+    ).join('');
+
     detailsDiv.innerHTML = `
-        <h2>${stationInfo.Name}</h2>
-        <p><strong>Station Code:</strong> ${stationInfo.Code}</p>
-        <p><strong>Lines:</strong> ${lines.join(", ")}</p>
+        <h2 style="display: flex; align-items: center; gap: 8px;">
+            ${stationInfo.Name}
+            <span style="display: flex; align-items: center;">${lineBadgesHTML}</span>
+        </h2>
+        ${predictionsHTML}
         <p><strong>Address:</strong> ${stationInfo.Address.Street}, ${stationInfo.Address.City}, ${stationInfo.Address.State} ${stationInfo.Address.Zip}</p>
-        <p><strong>Coordinates:</strong> ${stationInfo.Lat}, ${stationInfo.Lon}</p>
-        ${stationInfo.StationTogether1 ? `<p><strong>Connected Platform:</strong> ${stationInfo.StationTogether1}</p>` : ""}
         ${entrancesHTML}
     `;
 
     // Pan the map to the selected station
     if (stationInfo.Lat && stationInfo.Lon) {
-        // Only zoom in if we're currently zoomed out; don't zoom out if already close
+        // Only zoom in if we're currently zoomed out, don't zoom out if already close
         const currentZoom = map.getZoom();
-        const targetZoom = Math.max(currentZoom, 16); // Use current zoom if already closer than 15
-        
-        map.setView([stationInfo.Lat, stationInfo.Lon], targetZoom);
+        const targetZoom = Math.max(currentZoom, 16);
+        map.setView([stationInfo.Lat, stationInfo.Lon], targetZoom, { animate: false });
         
         // Highlight the marker (open its popup)
         const marker = markers[stationInfo.Code];
-        if (marker) {
-            marker.openPopup();
+        if (marker) marker.openPopup();
+    }
+    console.log(`[${getTimestamp()}] [Station] Selection complete`);
+    
+    // Start auto-refresh timer for this station
+    startPredictionRefresh();
+}
+
+// Update just the predictions for the current station (used for auto-refresh)
+async function updatePredictions(stationCode: string, stationInfo: StationInfo) {
+    const predictions = await fetchTrainPredictions(getStationCodes(stationInfo));
+    const predictionsHTML = buildTrainPredictionsHTML(predictions);
+    
+    const detailsDiv = document.getElementById("station-details-content");
+    if (!detailsDiv) return;
+    
+    // Find the "Next Trains:" section and replace it
+    const parser = new DOMParser();
+    const newDoc = parser.parseFromString(detailsDiv.innerHTML, 'text/html');
+    const predSection = newDoc.querySelector('div[style*="margin-top: 16px"]');
+    
+    if (predSection) {
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = predictionsHTML;
+        const newPredSection = tempDiv.firstElementChild;
+        if (newPredSection) {
+            predSection.replaceWith(newPredSection);
+            detailsDiv.innerHTML = newDoc.body.innerHTML;
         }
     }
 }
 
+// Fetch and display rail lines on the map
+async function loadRailLines() {
+    try {
+        console.log(`[${getTimestamp()}] [Lines] Loading rail lines...`);
+        const geojson = await fetchRailLines();
+        console.log(`[${getTimestamp()}] [Lines] Loaded ${geojson.features.length} rail line(s)`);
+        
+        // Adds GeoJSON to map with custom styling
+        L.geoJSON(geojson, {
+            style: (feature) => {
+                // Get the line name from the GeoJSON properties
+                const lineName = (feature?.properties?.LINE || "").toLowerCase();
+                // Pick a color based on the line name
+                const color = Object.entries(LINE_COLORS).find(([key]) => lineName.includes(key))?.[1] || '#888';
+                return { color, weight: 3, opacity: 0.8 };
+            }
+        }).addTo(map);
+    } catch (err) {
+        console.error("Error loading rail lines:", err);
+    }
+}
+
+// Close the station details panel
+function closeStationDetails() {
+    // Stop auto-refresh timer
+    stopPredictionRefresh();
+    
+    // Clear current station tracking
+    currentStationCode = null;
+    currentStationInfo = null;
+    
+    const detailsDiv = document.getElementById("station-details-content");
+    if (detailsDiv) detailsDiv.innerHTML = '<p>Click on a station in the list or on the map to view details</p>';
+    
+    const closeBtn = document.getElementById("close-details");
+    if (closeBtn) closeBtn.style.display = "none";
+    
+    // Clear entrance markers from the map
+    entranceMarkers.forEach(marker => map.removeLayer(marker));
+    entranceMarkers = [];
+    map.closePopup();
+}
+
 // Initialize everything when the page loads
 initMap();
+loadRailLines();
 fetchStations();
+
+// Wire up close button
+const closeBtn = document.getElementById("close-details");
+if (closeBtn) closeBtn.addEventListener("click", closeStationDetails);

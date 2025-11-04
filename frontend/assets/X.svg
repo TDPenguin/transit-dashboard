@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="594.0072pt"
+   height="594.0072pt"
+   viewBox="0 0 5.940072 5.940072"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="X.svg"
+   inkscape:export-filename="WMATA_Red_New.png"
+   inkscape:export-xdpi="36.363197"
+   inkscape:export-ydpi="36.363197"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.0482005"
+     inkscape:cx="237.54997"
+     inkscape:cy="477.00798"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1566">
+      <path
+         d="M 25,98.744 H 1055 V 1217.558 H 25 Z"
+         transform="translate(-400.19251,-1186.2328)"
+         id="path1566" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-842.43333,3212.8354)">
+    <path
+       id="path1565"
+       d="m 0,0 c 0,4.65 3.769,8.419 8.419,8.419 4.65,0 8.419,-3.769 8.419,-8.419 0,-4.649 -3.769,-8.419 -8.419,-8.419 C 3.769,-8.419 0,-4.649 0,0"
+       style="fill:#1E191A;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       transform="matrix(0.35277776,0,0,-0.35277776,842.43333,-3209.8654)"
+       clip-path="url(#clipPath1566)" />
+  </g>
+</svg>

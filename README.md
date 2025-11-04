@@ -62,9 +62,11 @@ Open http://localhost:3000
 ## Project Structure
 ```
 backend/
-  ├── main.go           # HTTP server, API fetching, caching
-  ├── .env              # API key (gitignored)
-  └── go.mod
+  ├── main.go           # Entry point, server setup
+  ├── types.go          # All structs for data
+  ├── cache.go          # Caching logic
+  ├── handlers.go       # HTTP handlers
+  └── .env              # API key (gitignored)
 
 frontend/
   ├── index.html        # Page structure

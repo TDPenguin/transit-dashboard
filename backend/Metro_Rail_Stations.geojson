@@ -1,0 +1,3148 @@
+{
+  "type": "FeatureCollection",
+  "name": "Metro_Rail_Stations",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 1,
+        "Network_Node": 8082,
+        "NAME": "Capitol Heights",
+        "Station_Name": "Capitol Heights",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/capitol-heights.cfm",
+        "LINE": "Blue, Silver",
+        "SEQNO": 82,
+        "Parking": "Y",
+        "XCoord": -76.91181036977733,
+        "YCoord": 38.88947364521484,
+        "State": "Maryland",
+        "Jurisdiction": 2,
+        "FIPS": "24033",
+        "Line2": "SILVER",
+        "Line3": null,
+        "Line4": null,
+        "Year": 1980,
+        "Station_Number": 91,
+        "ADDRESS": "133 CENTRAL AVENUE, CAPITOL HEIGHTS, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#G02|Capitol%20Heights"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.91181036987324,
+          38.88947364509957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 2,
+        "Network_Node": 8085,
+        "NAME": "Morgan Boulevard",
+        "Station_Name": "Morgan Boulevard",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/morgan-blvd.cfm",
+        "LINE": "Blue, Silver",
+        "SEQNO": 85,
+        "Parking": "Y",
+        "XCoord": -76.86807700953254,
+        "YCoord": 38.89384271918598,
+        "State": "Maryland",
+        "Jurisdiction": 2,
+        "FIPS": "24033",
+        "Line2": "SILVER",
+        "Line3": null,
+        "Line4": null,
+        "Year": 2004,
+        "Station_Number": 110,
+        "ADDRESS": "300 GARRETT MORGAN BLVD., LANDOVER, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#G04|Morgan%20Boulevard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.86807701012852,
+          38.89384271894684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 3,
+        "Network_Node": 8031,
+        "NAME": "Georgia Ave-Petworth",
+        "Station_Name": "Georgia Ave-Petworth",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/georgia-ave.cfm",
+        "LINE": "Green",
+        "SEQNO": 31,
+        "Parking": "N",
+        "XCoord": -77.02346319727337,
+        "YCoord": 38.937442424359865,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1999,
+        "Station_Number": 76,
+        "ADDRESS": "3750 GEORGIA AVENUE NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#E05|Georgia%20Ave-Petworth"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0240963194374,
+          38.93673042776485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 4,
+        "Network_Node": 8022,
+        "NAME": "Takoma",
+        "Station_Name": "Takoma",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/takoma.cfm",
+        "LINE": "Red",
+        "SEQNO": 22,
+        "Parking": "N",
+        "XCoord": -77.01817899257013,
+        "YCoord": 38.97608633253324,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1978,
+        "Station_Number": 29,
+        "ADDRESS": "327 CEDAR STREET NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#B07|Takoma"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.01822668370461,
+          38.97606859536789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 5,
+        "Network_Node": 8026,
+        "NAME": "Glenmont",
+        "Station_Name": "Glenmont",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/glenmont.cfm",
+        "LINE": "Red",
+        "SEQNO": 26,
+        "Parking": "Y",
+        "XCoord": -77.05355966911596,
+        "YCoord": 39.061791583269056,
+        "State": "Maryland",
+        "Jurisdiction": 1,
+        "FIPS": "24031",
+        "Line2": "RED",
+        "Line3": null,
+        "Line4": null,
+        "Year": 1998,
+        "Station_Number": 34,
+        "ADDRESS": "12501 GEORGIA AVENUE, SILVER SPRING, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#B11|Glenmont"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.05363670050019,
+          39.06177340385493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 6,
+        "Network_Node": 8025,
+        "NAME": "Wheaton",
+        "Station_Name": "Wheaton",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/wheaton.cfm",
+        "LINE": "Red",
+        "SEQNO": 25,
+        "Parking": "Y",
+        "XCoord": -77.05010936095869,
+        "YCoord": 39.03753495702025,
+        "State": "Maryland",
+        "Jurisdiction": 1,
+        "FIPS": "24031",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1990,
+        "Station_Number": 33,
+        "ADDRESS": "11171 GEORGIA AVENUE, SILVER SPRING, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#B10|Wheaton"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.05059261404884,
+          39.03857837817611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 7,
+        "Network_Node": 8024,
+        "NAME": "Forest Glen",
+        "Station_Name": "Forest Glen",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/forest-glen.cfm",
+        "LINE": "Red",
+        "SEQNO": 24,
+        "Parking": "Y",
+        "XCoord": -77.04291885849604,
+        "YCoord": 39.014962084301075,
+        "State": "Maryland",
+        "Jurisdiction": 1,
+        "FIPS": "24031",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1990,
+        "Station_Number": 32,
+        "ADDRESS": "9730 GEORGIA AVENUE, FOREST GLEN, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#B09|Forest%20Glen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.04334457062289,
+          39.0154907454333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 8,
+        "Network_Node": 8023,
+        "NAME": "Silver Spring",
+        "Station_Name": "Silver Spring",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/silver-spring.cfm",
+        "LINE": "Red",
+        "SEQNO": 23,
+        "Parking": "N",
+        "XCoord": -77.03102012497027,
+        "YCoord": 38.99395717955676,
+        "State": "Maryland",
+        "Jurisdiction": 1,
+        "FIPS": "24031",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1978,
+        "Station_Number": 31,
+        "ADDRESS": "8400 COLESVILLE ROAD, SILVER SPRING, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#B08|Silver%20Spring"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0314556406093,
+          38.99385202592017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 9,
+        "Network_Node": 8020,
+        "NAME": "Brookland-CUA",
+        "Station_Name": "Brookland-CUA",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/brookland.cfm",
+        "LINE": "Red",
+        "SEQNO": 20,
+        "Parking": "N",
+        "XCoord": -76.99453656922769,
+        "YCoord": 38.93321878524109,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1978,
+        "Station_Number": 27,
+        "ADDRESS": "890 MONROE STREET NE, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#B05|Brookland-CUA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.99461839008426,
+          38.93320655043596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 10,
+        "Network_Node": 8021,
+        "NAME": "Fort Totten",
+        "Station_Name": "Fort Totten",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/fort-totten.cfm",
+        "LINE": "Red, Green",
+        "SEQNO": 21,
+        "Parking": "Y",
+        "XCoord": -77.00220536352495,
+        "YCoord": 38.95185456490272,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": "GREEN",
+        "Line3": null,
+        "Line4": null,
+        "Year": 1978,
+        "Station_Number": 28,
+        "ADDRESS": "201 GALLOWAY STREET NE, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#B06,E06|Fort%20Totten"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.00226188561602,
+          38.95186452079273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 11,
+        "Network_Node": 8029,
+        "NAME": "Hyattsville Crossing",
+        "Station_Name": "Hyattsville Crossing",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/hyattsville-xing.cfm",
+        "LINE": "Green",
+        "SEQNO": 29,
+        "Parking": "Y",
+        "XCoord": -76.9558837818853,
+        "YCoord": 38.96539324765316,
+        "State": "Maryland",
+        "Jurisdiction": 2,
+        "FIPS": "24033",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1993,
+        "Station_Number": 78,
+        "ADDRESS": "3575 EAST WEST HIGHWAY, HYATTSVILLE, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#E08|Hyattsville%20Crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.95588643532157,
+          38.965320852148366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 12,
+        "Network_Node": 8030,
+        "NAME": "West Hyattsville",
+        "Station_Name": "West Hyattsville",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/west-hyattsville.cfm",
+        "LINE": "Green",
+        "SEQNO": 30,
+        "Parking": "Y",
+        "XCoord": -76.96957895258457,
+        "YCoord": 38.955047969567325,
+        "State": "Maryland",
+        "Jurisdiction": 2,
+        "FIPS": "24033",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1993,
+        "Station_Number": 77,
+        "ADDRESS": "2700 HAMILTON ST., HYATTSVILLE, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#E07|West%20Hyattsville"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9696345277459,
+          38.9550833320107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 13,
+        "Network_Node": 8081,
+        "NAME": "Benning Road",
+        "Station_Name": "Benning Road",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/benning-road.cfm",
+        "LINE": "Blue, Silver",
+        "SEQNO": 81,
+        "Parking": "N",
+        "XCoord": -76.93836713208938,
+        "YCoord": 38.89098346383309,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": "SILVER",
+        "Line3": null,
+        "Line4": null,
+        "Year": 1980,
+        "Station_Number": 90,
+        "ADDRESS": "4500 CENTRAL AVENUE NE, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#G01|Benning%20Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.93836713183956,
+          38.89098346444878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 14,
+        "Network_Node": 8083,
+        "NAME": "Addison Road-Seat Pleasant",
+        "Station_Name": "Addison Road-Seat Pleasant",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/addison-road.cfm",
+        "LINE": "Blue, Silver",
+        "SEQNO": 83,
+        "Parking": "Y",
+        "XCoord": -76.89411015978729,
+        "YCoord": 38.88675560551735,
+        "State": "Maryland",
+        "Jurisdiction": 2,
+        "FIPS": "24033",
+        "Line2": "SILVER",
+        "Line3": null,
+        "Line4": null,
+        "Year": 1980,
+        "Station_Number": 92,
+        "ADDRESS": "100 ADDISON ROAD S., CAPITOL HEIGHTS, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#G03|Addison%20Road-Seat%20Pleasant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.89411015967787,
+          38.88675560606926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 15,
+        "Network_Node": 8077,
+        "NAME": "Deanwood",
+        "Station_Name": "Deanwood",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/deanwood.cfm",
+        "LINE": "Orange",
+        "SEQNO": 77,
+        "Parking": "Y",
+        "XCoord": -76.93525904721834,
+        "YCoord": 38.90818628798718,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1978,
+        "Station_Number": 65,
+        "ADDRESS": "4720 MINNESOTA AVENUE NE, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#D10|Deanwood"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.93527505555184,
+          38.90821173609622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 16,
+        "Network_Node": 8080,
+        "NAME": "New Carrollton",
+        "Station_Name": "New Carrollton",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/new-carrollton.cfm",
+        "LINE": "Orange",
+        "SEQNO": 80,
+        "Parking": "Y",
+        "XCoord": -76.87184353349953,
+        "YCoord": 38.94779265746772,
+        "State": "Maryland",
+        "Jurisdiction": 2,
+        "FIPS": "24033",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1978,
+        "Station_Number": 68,
+        "ADDRESS": "4700 GARDEN CITY DRIVE, NEW CARROLLTON, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#D13|New%20Carrollton"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.8720709299903,
+          38.94794658507355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 17,
+        "Network_Node": 8079,
+        "NAME": "Landover",
+        "Station_Name": "Landover",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/landover.cfm",
+        "LINE": "Orange",
+        "SEQNO": 79,
+        "Parking": "Y",
+        "XCoord": -76.89120021968559,
+        "YCoord": 38.93351403213752,
+        "State": "Maryland",
+        "Jurisdiction": 2,
+        "FIPS": "24033",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1978,
+        "Station_Number": 67,
+        "ADDRESS": "3000 PENNSY DRIVE, HYATTSVILLE, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#D12|Landover"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.89125227308489,
+          38.93359549158313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 18,
+        "Network_Node": 8078,
+        "NAME": "Cheverly",
+        "Station_Name": "Cheverly",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/cheverly.cfm",
+        "LINE": "Orange",
+        "SEQNO": 78,
+        "Parking": "Y",
+        "XCoord": -76.91663030299408,
+        "YCoord": 38.916639648277744,
+        "State": "Maryland",
+        "Jurisdiction": 2,
+        "FIPS": "24033",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1978,
+        "Station_Number": 66,
+        "ADDRESS": "5501 COLUMBIA PARK, CHEVERLY, MD \n",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#D11|Cheverly"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.91664191064928,
+          38.916676199689206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 19,
+        "Network_Node": 8086,
+        "NAME": "Downtown Largo",
+        "Station_Name": "Downtown Largo",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/downtown-largo.cfm",
+        "LINE": "Blue, Silver",
+        "SEQNO": 86,
+        "Parking": "Y",
+        "XCoord": -76.84455386901843,
+        "YCoord": 38.90060751296352,
+        "State": "Maryland",
+        "Jurisdiction": 2,
+        "FIPS": "24033",
+        "Line2": "SILVER",
+        "Line3": null,
+        "Line4": null,
+        "Year": 2004,
+        "Station_Number": 109,
+        "ADDRESS": "9000 LOTTSFORD ROAD, LARGO, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#G05|Downtown%20Largo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.84455386851297,
+          38.90060751272325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 20,
+        "Network_Node": 8098,
+        "NAME": "NoMa-Gallaudet U",
+        "Station_Name": "NoMa-Gallaudet U",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/noma-gallaudet.cfm",
+        "LINE": "Red",
+        "SEQNO": 98,
+        "Parking": "N",
+        "XCoord": -77.00302273149173,
+        "YCoord": 38.907024000505196,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 2004,
+        "Station_Number": 108,
+        "ADDRESS": "1301 2ND STREET NE, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#B35|NoMa-Gallaudet%20U"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.00293702233398,
+          38.90734198841132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 21,
+        "Network_Node": 8065,
+        "NAME": "Rosslyn",
+        "Station_Name": "Rosslyn",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/rosslyn.cfm",
+        "LINE": "Blue, Orange, Silver",
+        "SEQNO": 65,
+        "Parking": "N",
+        "XCoord": -77.07091099048847,
+        "YCoord": 38.895986880612526,
+        "State": "Virginia",
+        "Jurisdiction": 3,
+        "FIPS": "51013",
+        "Line2": "BLUE",
+        "Line3": "SILVER",
+        "Line4": null,
+        "Year": 1977,
+        "Station_Number": 41,
+        "ADDRESS": "1850 N. MOORE STREET, ARLINGTON, VA",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#C05|Rosslyn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0709435184858,
+          38.895993194834425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 22,
+        "Network_Node": 8056,
+        "NAME": "Arlington Cemetery",
+        "Station_Name": "Arlington Cemetery",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/arlington-cemetery.cfm",
+        "LINE": "Blue",
+        "SEQNO": 56,
+        "Parking": "N",
+        "XCoord": -77.06281243184046,
+        "YCoord": 38.8846946403257,
+        "State": "Virginia",
+        "Jurisdiction": 3,
+        "FIPS": "51013",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1977,
+        "Station_Number": 42,
+        "ADDRESS": "1000 NORTH MEMORIAL DRIVE, ARLINGTON, VA",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#C06|Arlington%20Cemetery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.06310030021126,
+          38.88455148225562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 23,
+        "Network_Node": 8013,
+        "NAME": "Dupont Circle",
+        "Station_Name": "Dupont Circle",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/dupont-circle.cfm",
+        "LINE": "Red",
+        "SEQNO": 13,
+        "Parking": "N",
+        "XCoord": -77.04341665765962,
+        "YCoord": 38.909605845128496,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1977,
+        "Station_Number": 6,
+        "ADDRESS": "1525 20TH STREET NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#A03|Dupont%20Circle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.04340018574949,
+          38.909624550603745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 24,
+        "Network_Node": 8055,
+        "NAME": "Pentagon",
+        "Station_Name": "Pentagon",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/pentagon.cfm",
+        "LINE": "Blue, Yellow",
+        "SEQNO": 55,
+        "Parking": "N",
+        "XCoord": -77.05371797119012,
+        "YCoord": 38.86947048055992,
+        "State": "Virginia",
+        "Jurisdiction": 3,
+        "FIPS": "51013",
+        "Line2": "YELLOW",
+        "Line3": null,
+        "Line4": null,
+        "Year": 1977,
+        "Station_Number": 43,
+        "ADDRESS": "2 SOUTH ROTARY ROAD, ARLINGTON, VA",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#C07|Pentagon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.05378700960848,
+          38.86956635281896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 25,
+        "Network_Node": 8053,
+        "NAME": "Crystal City",
+        "Station_Name": "Crystal City",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/crystal-city.cfm",
+        "LINE": "Blue, Yellow",
+        "SEQNO": 53,
+        "Parking": "N",
+        "XCoord": -77.05029210671941,
+        "YCoord": 38.857912097119446,
+        "State": "Virginia",
+        "Jurisdiction": 3,
+        "FIPS": "51013",
+        "Line2": "YELLOW",
+        "Line3": null,
+        "Line4": null,
+        "Year": 1977,
+        "Station_Number": 45,
+        "ADDRESS": "1750 SOUTH CLARK ST., ARLINGTON, VA",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#C09|Crystal%20City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.05028425200949,
+          38.85784652007716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 26,
+        "Network_Node": 8039,
+        "NAME": "Navy Yard-Ballpark",
+        "Station_Name": "Navy Yard-Ballpark",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/navy-yd-ballpark.cfm",
+        "LINE": "Green",
+        "SEQNO": 39,
+        "Parking": "N",
+        "XCoord": -77.00508793483235,
+        "YCoord": 38.87648886695686,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1991,
+        "Station_Number": 84,
+        "ADDRESS": "1155 NEW JERSEY AVENUE SE, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#F05|Navy%20Yard-Ballpark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.00509013353769,
+          38.876436220973126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 27,
+        "Network_Node": 8034,
+        "NAME": "Shaw-Howard U",
+        "Station_Name": "Shaw-Howard U",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/shaw-howard.cfm",
+        "LINE": "Green",
+        "SEQNO": 34,
+        "Parking": "N",
+        "XCoord": -77.02191399188325,
+        "YCoord": 38.91348466004023,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1991,
+        "Station_Number": 72,
+        "ADDRESS": "1801 7TH ST NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#E02|Shaw-Howard%20U"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.021989057026,
+          38.913492404915544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 28,
+        "Network_Node": 8042,
+        "NAME": "Southern Avenue",
+        "Station_Name": "Southern Avenue",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/southern-ave.cfm",
+        "LINE": "Green",
+        "SEQNO": 42,
+        "Parking": "Y",
+        "XCoord": -76.97505641102109,
+        "YCoord": 38.84109355670434,
+        "State": "Maryland",
+        "Jurisdiction": 2,
+        "FIPS": "24033",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 2001,
+        "Station_Number": 107,
+        "ADDRESS": "1411 SOUTHERN AVENUE, TEMPLE HILLS, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#F08|Southern%20Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.97540770676949,
+          38.84074205274483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 29,
+        "Network_Node": 8027,
+        "NAME": "Greenbelt",
+        "Station_Name": "Greenbelt",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/greenbelt.cfm",
+        "LINE": "Green",
+        "SEQNO": 27,
+        "Parking": "Y",
+        "XCoord": -76.91105983559324,
+        "YCoord": 39.01115367391248,
+        "State": "Maryland",
+        "Jurisdiction": 2,
+        "FIPS": "24033",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1993,
+        "Station_Number": 80,
+        "ADDRESS": "5717 GREENBELT METRO DRIVE, GREENBELT, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#E10|Greenbelt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.91120478112464,
+          39.011197866648395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 30,
+        "Network_Node": 8009,
+        "NAME": "Tenleytown-AU",
+        "Station_Name": "Tenleytown-AU",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/tenleytown.cfm",
+        "LINE": "Red",
+        "SEQNO": 9,
+        "Parking": "N",
+        "XCoord": -77.07958963676525,
+        "YCoord": 38.94885922913323,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1984,
+        "Station_Number": 10,
+        "ADDRESS": "4501 WISCONSIN AVENUE NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#A07|Tenleytown-AU"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.07936443385607,
+          38.94842425965637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 31,
+        "Network_Node": 8059,
+        "NAME": "West Falls Church",
+        "Station_Name": "West Falls Church",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/west-falls-church.cfm",
+        "LINE": "Orange",
+        "SEQNO": 59,
+        "Parking": "Y",
+        "XCoord": -77.18909716495598,
+        "YCoord": 38.90078833117609,
+        "State": "Virginia",
+        "Jurisdiction": 5,
+        "FIPS": "51059",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1986,
+        "Station_Number": 101,
+        "ADDRESS": "7040 HAYCOCK ROAD, FALLS CHURCH, VA",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#K06|West%20Falls%20Church"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.18910022781752,
+          38.90088956959796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 32,
+        "Network_Node": 8058,
+        "NAME": "Dunn Loring-Merrifield",
+        "Station_Name": "Dunn Loring-Merrifield",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/dunn-loring.cfm",
+        "LINE": "Orange",
+        "SEQNO": 58,
+        "Parking": "Y",
+        "XCoord": -77.2271630249647,
+        "YCoord": 38.88363291174086,
+        "State": "Virginia",
+        "Jurisdiction": 5,
+        "FIPS": "51059",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1986,
+        "Station_Number": 102,
+        "ADDRESS": "2700 GALLOWS ROAD, VIENNA, VA",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#K07|Dunn%20Loring-Merrifield"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.22811690434962,
+          38.88342370809883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 33,
+        "Network_Node": 8057,
+        "NAME": "Vienna/Fairfax-GMU",
+        "Station_Name": "Vienna/Fairfax-GMU",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/vienna.cfm",
+        "LINE": "Orange",
+        "SEQNO": 57,
+        "Parking": "Y",
+        "XCoord": -77.27262462374156,
+        "YCoord": 38.8776088960101,
+        "State": "Virginia",
+        "Jurisdiction": 5,
+        "FIPS": "51059",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1986,
+        "Station_Number": 103,
+        "ADDRESS": "2900 NUTLEY ST., FAIRFAX, VA",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#K08|Vienna/Fairfax-GMU"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.27262687166663,
+          38.87761596799268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 34,
+        "Network_Node": 8008,
+        "NAME": "Friendship Heights",
+        "Station_Name": "Friendship Heights",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/friendship-hts.cfm",
+        "LINE": "Red",
+        "SEQNO": 8,
+        "Parking": "N",
+        "XCoord": -77.08499811951923,
+        "YCoord": 38.95949167024172,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1984,
+        "Station_Number": 11,
+        "ADDRESS": "5337 WISCONSIN AVENUE NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#A08|Friendship%20Heights"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0849981197672,
+          38.959491669557686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 35,
+        "Network_Node": 8001,
+        "NAME": "Shady Grove",
+        "Station_Name": "Shady Grove",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/shady-grove.cfm",
+        "LINE": "Red",
+        "SEQNO": 1,
+        "Parking": "Y",
+        "XCoord": -77.16462968253889,
+        "YCoord": 39.11993515029003,
+        "State": "Maryland",
+        "Jurisdiction": 1,
+        "FIPS": "24031",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1984,
+        "Station_Number": 18,
+        "ADDRESS": "15903 SOMERVILLE DRIVE, DERWOOD, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#A15|Shady%20Grove"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.1644993960137,
+          39.11999462430735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 36,
+        "Network_Node": 8002,
+        "NAME": "Rockville",
+        "Station_Name": "Rockville",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/rockville.cfm",
+        "LINE": "Red",
+        "SEQNO": 2,
+        "Parking": "Y",
+        "XCoord": -77.14612767959905,
+        "YCoord": 39.084329427003304,
+        "State": "Maryland",
+        "Jurisdiction": 1,
+        "FIPS": "24031",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1984,
+        "Station_Number": 17,
+        "ADDRESS": "251 HUNGERFORD DRIVE, ROCKVILLE, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#A14|Rockville"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.14614537651765,
+          39.08431946559542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 37,
+        "Network_Node": 8003,
+        "NAME": "Twinbrook",
+        "Station_Name": "Twinbrook",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/twinbrook.cfm",
+        "LINE": "Red",
+        "SEQNO": 3,
+        "Parking": "Y",
+        "XCoord": -77.12082028279879,
+        "YCoord": 39.06247546719392,
+        "State": "Maryland",
+        "Jurisdiction": 1,
+        "FIPS": "24031",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1984,
+        "Station_Number": 16,
+        "ADDRESS": "1600 CHAPMAN AVENUE, ROCKVILLE, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#A13|Twinbrook"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.12084109377543,
+          39.062461901833714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 38,
+        "Network_Node": 8004,
+        "NAME": "North Bethesda",
+        "Station_Name": "North Bethesda",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/north-bethesda.cfm",
+        "LINE": "Red",
+        "SEQNO": 4,
+        "Parking": "Y",
+        "XCoord": -77.11283218640585,
+        "YCoord": 39.048159170302675,
+        "State": "Maryland",
+        "Jurisdiction": 1,
+        "FIPS": "24031",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1984,
+        "Station_Number": 15,
+        "ADDRESS": "5500 MARINELLI ROAD, ROCKVILLE, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#A12|North%20Bethesda"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.11282490444509,
+          39.04817169196119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 39,
+        "Network_Node": 8005,
+        "NAME": "Grosvenor-Strathmore",
+        "Station_Name": "Grosvenor-Strathmore",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/grosvenor.cfm",
+        "LINE": "Red",
+        "SEQNO": 5,
+        "Parking": "Y",
+        "XCoord": -77.10385204462033,
+        "YCoord": 39.02927675961189,
+        "State": "Maryland",
+        "Jurisdiction": 1,
+        "FIPS": "24031",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1984,
+        "Station_Number": 14,
+        "ADDRESS": "10300 ROCKVILLE PIKE, BETHESDA, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#A11|Grosvenor-Strathmore"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.1038318440643,
+          39.02929558974703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 40,
+        "Network_Node": 8006,
+        "NAME": "Medical Center",
+        "Station_Name": "Medical Center",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/medical-center.cfm",
+        "LINE": "Red",
+        "SEQNO": 6,
+        "Parking": "N",
+        "XCoord": -77.09695460997058,
+        "YCoord": 39.00006428871676,
+        "State": "Maryland",
+        "Jurisdiction": 1,
+        "FIPS": "24031",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1984,
+        "Station_Number": 13,
+        "ADDRESS": "8810 ROCKVILLE PIKE, BETHESDA, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#A10|Medical%20Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.09680315431751,
+          38.999218702779835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 41,
+        "Network_Node": 8007,
+        "NAME": "Bethesda",
+        "Station_Name": "Bethesda",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/bethesda.cfm",
+        "LINE": "Red",
+        "SEQNO": 7,
+        "Parking": "N",
+        "XCoord": -77.09413151082917,
+        "YCoord": 38.9844014612428,
+        "State": "Maryland",
+        "Jurisdiction": 1,
+        "FIPS": "24031",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1984,
+        "Station_Number": 12,
+        "ADDRESS": "7450 WISCONSIN AVENUE, BETHESDA, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#A09|Bethesda"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.09404227452335,
+          38.98444447310993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 42,
+        "Network_Node": 8066,
+        "NAME": "Foggy Bottom-GWU",
+        "Station_Name": "Foggy Bottom-GWU",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/foggy-bottom.cfm",
+        "LINE": "Blue, Orange, Silver",
+        "SEQNO": 66,
+        "Parking": "N",
+        "XCoord": -77.05028003860762,
+        "YCoord": 38.90070579485911,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": "ORANGE",
+        "Line3": "SILVER",
+        "Line4": null,
+        "Year": 1977,
+        "Station_Number": 40,
+        "ADDRESS": "890 23RD STREET NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#C04|Foggy%20Bottom-GWU"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.05028237428787,
+          38.90079144505054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 43,
+        "Network_Node": 8064,
+        "NAME": "Court House",
+        "Station_Name": "Court House",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/court-house.cfm",
+        "LINE": "Orange, Silver",
+        "SEQNO": 64,
+        "Parking": "N",
+        "XCoord": -77.08713354119348,
+        "YCoord": 38.89018331343143,
+        "State": "Virginia",
+        "Jurisdiction": 3,
+        "FIPS": "51013",
+        "Line2": "SILVER",
+        "Line3": null,
+        "Line4": null,
+        "Year": 1979,
+        "Station_Number": 96,
+        "ADDRESS": "2100 WILSON BLVD, ARLINGTON, VA",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#K01|Court%20House"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08531762231972,
+          38.89095456462205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 44,
+        "Network_Node": 8063,
+        "NAME": "Clarendon",
+        "Station_Name": "Clarendon",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/clarendon.cfm",
+        "LINE": "Orange, Silver",
+        "SEQNO": 63,
+        "Parking": "N",
+        "XCoord": -77.09539641043803,
+        "YCoord": 38.88671262022707,
+        "State": "Virginia",
+        "Jurisdiction": 3,
+        "FIPS": "51013",
+        "Line2": "SILVER",
+        "Line3": null,
+        "Line4": null,
+        "Year": 1979,
+        "Station_Number": 97,
+        "ADDRESS": "3100 WILSON BLVD, ARLINGTON, VA",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#K02|Clarendon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.095426392729,
+          38.886778449421314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 45,
+        "Network_Node": 8060,
+        "NAME": "East Falls Church",
+        "Station_Name": "East Falls Church",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/east-falls-church.cfm",
+        "LINE": "Orange, Silver",
+        "SEQNO": 60,
+        "Parking": "Y",
+        "XCoord": -77.15688535143096,
+        "YCoord": 38.88596094538926,
+        "State": "Virginia",
+        "Jurisdiction": 3,
+        "FIPS": "51013",
+        "Line2": "SILVER",
+        "Line3": null,
+        "Line4": null,
+        "Year": 1986,
+        "Station_Number": 100,
+        "ADDRESS": "2001 N. SYCAMORE ST., ARLINGTON, VA",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#K05|East%20Falls%20Church"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.15685137132219,
+          38.88606086827725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 46,
+        "Network_Node": 8062,
+        "NAME": "Virginia Square-GMU",
+        "Station_Name": "Virginia Square-GMU",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/virginia-sq.cfm",
+        "LINE": "Orange, Silver",
+        "SEQNO": 62,
+        "Parking": "N",
+        "XCoord": -77.10297960931574,
+        "YCoord": 38.88337393190739,
+        "State": "Virginia",
+        "Jurisdiction": 3,
+        "FIPS": "51013",
+        "Line2": "SILVER",
+        "Line3": null,
+        "Line4": null,
+        "Year": 1979,
+        "Station_Number": 98,
+        "ADDRESS": "3600 FAIRFAX DRIVE, ARLINGTON, VA",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#K03|Virginia%20Square-GMU"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.10351325341495,
+          38.88326313505046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 47,
+        "Network_Node": 8061,
+        "NAME": "Ballston-MU",
+        "Station_Name": "Ballston-MU",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/ballston.cfm",
+        "LINE": "Orange, Silver",
+        "SEQNO": 61,
+        "Parking": "N",
+        "XCoord": -77.11317115238576,
+        "YCoord": 38.88219065371316,
+        "State": "Virginia",
+        "Jurisdiction": 3,
+        "FIPS": "51013",
+        "Line2": "SILVER",
+        "Line3": null,
+        "Line4": null,
+        "Year": 1979,
+        "Station_Number": 99,
+        "ADDRESS": "4230 FAIRFAX DRIVE, ARLINGTON, VA",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#K04|Ballston-MU"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.1114377244646,
+          38.88233339676137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 48,
+        "Network_Node": 8067,
+        "NAME": "Farragut West",
+        "Station_Name": "Farragut West",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/farragut-west.cfm",
+        "LINE": "Blue, Orange, Silver",
+        "SEQNO": 67,
+        "Parking": "N",
+        "XCoord": -77.04069771136984,
+        "YCoord": 38.90132068000044,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": "ORANGE",
+        "Line3": "SILVER",
+        "Line4": null,
+        "Year": 1977,
+        "Station_Number": 38,
+        "ADDRESS": "841 17TH STREET NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#C03|Farragut%20West"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.04070000701537,
+          38.90139602871745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 49,
+        "Network_Node": 8014,
+        "NAME": "Farragut North",
+        "Station_Name": "Farragut North",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/farragut-north.cfm",
+        "LINE": "Red",
+        "SEQNO": 14,
+        "Parking": "N",
+        "XCoord": -77.03970312341477,
+        "YCoord": 38.90320973300679,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1976,
+        "Station_Number": 4,
+        "ADDRESS": "1720 L STREET NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#A02|Farragut%20North"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.03964760207185,
+          38.9032511087239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 50,
+        "Network_Node": 8012,
+        "NAME": "Woodley Park-Zoo/Adams Morgan",
+        "Station_Name": "Woodley Park-Zoo/Adams Morgan",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/woodley-park.cfm",
+        "LINE": "Red",
+        "SEQNO": 12,
+        "Parking": "N",
+        "XCoord": -77.05242032252198,
+        "YCoord": 38.9250929271594,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1981,
+        "Station_Number": 7,
+        "ADDRESS": "2622 CONNECTICUT AVENUE NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#A04|Woodley%20Park-Zoo/Adams%20Morgan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.05236805695218,
+          38.92513240264589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 51,
+        "Network_Node": 8037,
+        "NAME": "L'Enfant Plaza",
+        "Station_Name": "L'Enfant Plaza",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/lenfant-plaza.cfm",
+        "LINE": "Green, Yellow, Orange, Blue, Silver",
+        "SEQNO": 37,
+        "Parking": "N",
+        "XCoord": -77.02191077311882,
+        "YCoord": 38.88484551142272,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": "YELLOW",
+        "Line3": "BLUE",
+        "Line4": "ORANGE",
+        "Year": 1977,
+        "Station_Number": 82,
+        "ADDRESS": "600 MARYLAND AVENUE SW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#D03,F03|L'Enfant%20Plaza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.02190397687565,
+          38.88494361369266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 52,
+        "Network_Node": 8070,
+        "NAME": "Smithsonian",
+        "Station_Name": "Smithsonian",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/smithsonian.cfm",
+        "LINE": "Blue, Orange, Silver",
+        "SEQNO": 70,
+        "Parking": "N",
+        "XCoord": -77.02806852638886,
+        "YCoord": 38.888026486337395,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": "ORANGE",
+        "Line3": "SILVER",
+        "Line4": null,
+        "Year": 1977,
+        "Station_Number": 54,
+        "ADDRESS": "1201 JEFFERSON DRIVE SW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#D02|Smithsonian"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.02838872743743,
+          38.88794498602858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 53,
+        "Network_Node": 8054,
+        "NAME": "Pentagon City",
+        "Station_Name": "Pentagon City",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/pentagon-city.cfm",
+        "LINE": "Blue, Yellow",
+        "SEQNO": 54,
+        "Parking": "N",
+        "XCoord": -77.05954122084415,
+        "YCoord": 38.861890164149045,
+        "State": "Virginia",
+        "Jurisdiction": 3,
+        "FIPS": "51013",
+        "Line2": "YELLOW",
+        "Line3": null,
+        "Line4": null,
+        "Year": 1977,
+        "Station_Number": 44,
+        "ADDRESS": "1250 SOUTH HAYES ST., ARLINGTON, VA",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#C08|Pentagon%20City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.05957183097759,
+          38.86190156827998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 54,
+        "Network_Node": 8069,
+        "NAME": "Federal Triangle",
+        "Station_Name": "Federal Triangle",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/federal-triangle.cfm",
+        "LINE": "Blue, Orange, Silver",
+        "SEQNO": 69,
+        "Parking": "N",
+        "XCoord": -77.02813428952891,
+        "YCoord": 38.89318865703335,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": "ORANGE",
+        "Line3": "SILVER",
+        "Line4": null,
+        "Year": 1977,
+        "Station_Number": 53,
+        "ADDRESS": "350 12TH STREET NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#D01|Federal%20Triangle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.02803501837434,
+          38.89319619425478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 55,
+        "Network_Node": 8036,
+        "NAME": "Archives-Navy Memorial-Penn Quarter",
+        "Station_Name": "Archives-Navy Memorial-Penn Quarter",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/archives.cfm",
+        "LINE": "Green, Yellow",
+        "SEQNO": 36,
+        "Parking": "N",
+        "XCoord": -77.0219166773068,
+        "YCoord": 38.89367300792147,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": "YELLOW",
+        "Line3": null,
+        "Line4": null,
+        "Year": 1983,
+        "Station_Number": 81,
+        "ADDRESS": "300 7TH STREET NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#F02|Archives-Navy%20Memorial-Penn%20Quarter"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.02191667674717,
+          38.89367300759914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 56,
+        "Network_Node": 8038,
+        "NAME": "Waterfront",
+        "Station_Name": "Waterfront",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/waterfront.cfm",
+        "LINE": "Green",
+        "SEQNO": 38,
+        "Parking": "N",
+        "XCoord": -77.01750749592509,
+        "YCoord": 38.87646964870295,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1991,
+        "Station_Number": 83,
+        "ADDRESS": "399 M STREET SW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#F04|Waterfront"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.01750970106086,
+          38.87641865259862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 57,
+        "Network_Node": 8052,
+        "NAME": "Ronald Reagan Washington National Airport",
+        "Station_Name": "Ronald Reagan Washington National Airport",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/national-airport.cfm",
+        "LINE": "Blue, Yellow",
+        "SEQNO": 52,
+        "Parking": "N",
+        "XCoord": -77.04404458826426,
+        "YCoord": 38.85342416190082,
+        "State": "Virginia",
+        "Jurisdiction": 3,
+        "FIPS": "51013",
+        "Line2": "YELLOW",
+        "Line3": null,
+        "Line4": null,
+        "Year": 1977,
+        "Station_Number": 93,
+        "ADDRESS": "2400 S. SMITH BLVD., ARLINGTON, VA",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#C10|Ronald%20Reagan%20Washington%20National%20Airport"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0441438518568,
+          38.853392259899124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 58,
+        "Network_Node": 8046,
+        "NAME": "Van Dorn Street",
+        "Station_Name": "Van Dorn Street",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/van-dorn-st.cfm",
+        "LINE": "Blue",
+        "SEQNO": 46,
+        "Parking": "Y",
+        "XCoord": -77.12911384120319,
+        "YCoord": 38.79931543459018,
+        "State": "Virginia",
+        "Jurisdiction": 5,
+        "FIPS": "51059",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1991,
+        "Station_Number": 94,
+        "ADDRESS": "5690 EISENHOWER AVENUE, ALEXANDRIA, VA",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#J02|Van%20Dorn%20Street"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.12912365873845,
+          38.79937664587364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 59,
+        "Network_Node": 8047,
+        "NAME": "Franconia-Springfield",
+        "Station_Name": "Franconia-Springfield",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/franc-sprngfld.cfm",
+        "LINE": "Blue",
+        "SEQNO": 47,
+        "Parking": "Y",
+        "XCoord": -77.16797250796905,
+        "YCoord": 38.766529647309376,
+        "State": "Virginia",
+        "Jurisdiction": 5,
+        "FIPS": "51059",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1997,
+        "Station_Number": 95,
+        "ADDRESS": "6880 FRONTIER DRIVE, SPRINGFIELD, VA",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#J03|Franconia-Springfield"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.16820826830684,
+          38.766485076423216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 60,
+        "Network_Node": 8071,
+        "NAME": "Federal Center SW",
+        "Station_Name": "Federal Center SW",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/federal-ctr-sw.cfm",
+        "LINE": "Blue, Orange, Silver",
+        "SEQNO": 71,
+        "Parking": "N",
+        "XCoord": -77.01587050416467,
+        "YCoord": 38.885080138773695,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": "ORANGE",
+        "Line3": "SILVER",
+        "Line4": null,
+        "Year": 1977,
+        "Station_Number": 58,
+        "ADDRESS": "401 3RD STREET SW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#D04|Federal%20Center%20SW"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.01587279208577,
+          38.88516202631708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 61,
+        "Network_Node": 8017,
+        "NAME": "Judiciary Square",
+        "Station_Name": "Judiciary Square",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/judiciary-square.cfm",
+        "LINE": "Red",
+        "SEQNO": 17,
+        "Parking": "N",
+        "XCoord": -77.01664124428335,
+        "YCoord": 38.89609810396444,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1976,
+        "Station_Number": 23,
+        "ADDRESS": "435 4TH STREET NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#B02|Judiciary%20Square"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.01753528311069,
+          38.896765988825514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 62,
+        "Network_Node": 8072,
+        "NAME": "Capitol South",
+        "Station_Name": "Capitol South",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/capitol-south.cfm",
+        "LINE": "Blue, Orange, Silver",
+        "SEQNO": 72,
+        "Parking": "N",
+        "XCoord": -77.00514170482356,
+        "YCoord": 38.88507028476405,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": "ORANGE",
+        "Line3": "SILVER",
+        "Line4": null,
+        "Year": 1977,
+        "Station_Number": 59,
+        "ADDRESS": "355 1ST STREET SE, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#D05|Capitol%20South"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.00553741530261,
+          38.88515902540222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 63,
+        "Network_Node": 8015,
+        "NAME": "Metro Center",
+        "Station_Name": "Metro Center",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/metro-center.cfm",
+        "LINE": "Red, Blue, Orange, Silver",
+        "SEQNO": 15,
+        "Parking": "N",
+        "XCoord": -77.028080289616,
+        "YCoord": 38.898322258385605,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": "BLUE",
+        "Line3": "ORANGE",
+        "Line4": "SILVER",
+        "Year": 1976,
+        "Station_Number": 1,
+        "ADDRESS": "607 13TH STREET NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#A01,C01|Metro%20Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.02796744931332,
+          38.89835157305975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 64,
+        "Network_Node": 8016,
+        "NAME": "Gallery Pl-Chinatown",
+        "Station_Name": "Gallery Pl-Chinatown",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/gallery-place.cfm",
+        "LINE": "Red, Green, Yellow",
+        "SEQNO": 16,
+        "Parking": "N",
+        "XCoord": -77.02191767988135,
+        "YCoord": 38.8983245959912,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": "GREEN",
+        "Line3": "YELLOW",
+        "Line4": null,
+        "Year": 1976,
+        "Station_Number": 21,
+        "ADDRESS": "625 9TH STREET NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#B01,F01|Gallery%20Pl-Chinatown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.02194344586677,
+          38.89840066560136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 65,
+        "Network_Node": 8035,
+        "NAME": "Mt Vernon Sq 7th St-Convention Center",
+        "Station_Name": "Mt Vernon Sq 7th St-Convention Center",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/mt-vernon-sq.cfm",
+        "LINE": "Green, Yellow",
+        "SEQNO": 35,
+        "Parking": "N",
+        "XCoord": -77.02191667125811,
+        "YCoord": 38.906444602936396,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": "YELLOW",
+        "Line3": null,
+        "Line4": null,
+        "Year": 1991,
+        "Station_Number": 70,
+        "ADDRESS": "700 M STREET NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#E01|Mt%20Vernon%20Sq%207th%20St-Convention%20Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0219518549255,
+          38.90645237100581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 66,
+        "Network_Node": 8033,
+        "NAME": "U Street/African-Amer Civil War Memorial/Cardozo",
+        "Station_Name": "U Street/African-Amer Civil War Memorial/Cardozo",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/u-street.cfm",
+        "LINE": "Green",
+        "SEQNO": 33,
+        "Parking": "N",
+        "XCoord": -77.02749818592318,
+        "YCoord": 38.917010188905905,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1991,
+        "Station_Number": 73,
+        "ADDRESS": "1260 U STREET NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#E03|U%20Street/African-Amer%20Civil%20War%20Memorial/Cardozo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.02750047954025,
+          38.91697137307454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 67,
+        "Network_Node": 8018,
+        "NAME": "Union Station",
+        "Station_Name": "Union Station",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/union-station.cfm",
+        "LINE": "Red",
+        "SEQNO": 18,
+        "Parking": "N",
+        "XCoord": -77.00741657775139,
+        "YCoord": 38.89777382571486,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1976,
+        "Station_Number": 25,
+        "ADDRESS": "605 1ST STREET NE, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#B03|Union%20Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.00743927311136,
+          38.897788958188315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 68,
+        "Network_Node": 8041,
+        "NAME": "Congress Heights",
+        "Station_Name": "Congress Heights",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/congress-heights.cfm",
+        "LINE": "Green",
+        "SEQNO": 41,
+        "Parking": "N",
+        "XCoord": -76.98851420982248,
+        "YCoord": 38.84566547988376,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 2001,
+        "Station_Number": 86,
+        "ADDRESS": "1300 ALABAMA AVENUE SE, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#F07|Congress%20Heights"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.98825165774487,
+          38.84536924663021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 69,
+        "Network_Node": 8043,
+        "NAME": "Naylor Road",
+        "Station_Name": "Naylor Road",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/naylor-road.cfm",
+        "LINE": "Green",
+        "SEQNO": 43,
+        "Parking": "Y",
+        "XCoord": -76.9562649764217,
+        "YCoord": 38.851309163015976,
+        "State": "Maryland",
+        "Jurisdiction": 2,
+        "FIPS": "24033",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 2001,
+        "Station_Number": 87,
+        "ADDRESS": "3101 BRANCH AVENUE, TEMPLE HILLS, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#F09|Naylor%20Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.95683057241578,
+          38.85104887689837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 70,
+        "Network_Node": 8044,
+        "NAME": "Suitland",
+        "Station_Name": "Suitland",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/suitland.cfm",
+        "LINE": "Green",
+        "SEQNO": 44,
+        "Parking": "Y",
+        "XCoord": -76.93187241727175,
+        "YCoord": 38.843972333424496,
+        "State": "Maryland",
+        "Jurisdiction": 2,
+        "FIPS": "24033",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 2001,
+        "Station_Number": 88,
+        "ADDRESS": "4500 SILVER HILL ROAD, SUITLAND, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#F10|Suitland"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.93230177634575,
+          38.84410529316549
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 71,
+        "Network_Node": 8045,
+        "NAME": "Branch Ave",
+        "Station_Name": "Branch Ave",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/branch-ave.cfm",
+        "LINE": "Green",
+        "SEQNO": 45,
+        "Parking": "Y",
+        "XCoord": -76.91146646983012,
+        "YCoord": 38.82645412413882,
+        "State": "Maryland",
+        "Jurisdiction": 2,
+        "FIPS": "24033",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 2001,
+        "Station_Number": 89,
+        "ADDRESS": "4704 OLD SOPER ROAD, SUITLAND, MD",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#F11|Branch%20Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.91222944256286,
+          38.826935243743016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 72,
+        "Network_Node": 8051,
+        "NAME": "Braddock Road",
+        "Station_Name": "Braddock Road",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/braddock-road.cfm",
+        "LINE": "Blue, Yellow",
+        "SEQNO": 51,
+        "Parking": "N",
+        "XCoord": -77.05366987002711,
+        "YCoord": 38.8141514349499,
+        "State": "Virginia",
+        "Jurisdiction": 4,
+        "FIPS": "51510",
+        "Line2": "YELLOW",
+        "Line3": null,
+        "Line4": null,
+        "Year": 1983,
+        "Station_Number": 47,
+        "ADDRESS": "700 N. WEST ST., ALEXANDRIA, VA",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#C12|Braddock%20Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.05375605721764,
+          38.8142186446352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 73,
+        "Network_Node": 8050,
+        "NAME": "King St-Old Town",
+        "Station_Name": "King St-Old Town",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/king-st-old-town.cfm",
+        "LINE": "Blue, Yellow",
+        "SEQNO": 50,
+        "Parking": "N",
+        "XCoord": -77.06081350504279,
+        "YCoord": 38.80659388297547,
+        "State": "Virginia",
+        "Jurisdiction": 4,
+        "FIPS": "51510",
+        "Line2": "YELLOW",
+        "Line3": null,
+        "Line4": null,
+        "Year": 1983,
+        "Station_Number": 48,
+        "ADDRESS": "1900 KING STREET, ALEXANDRIA, VA",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#C13|King%20St-Old%20Town"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.06102111755808,
+          38.806695865431514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 74,
+        "Network_Node": 8048,
+        "NAME": "Huntington",
+        "Station_Name": "Huntington",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/huntington.cfm",
+        "LINE": "Yellow",
+        "SEQNO": 48,
+        "Parking": "Y",
+        "XCoord": -77.07520808910348,
+        "YCoord": 38.79392361656221,
+        "State": "Virginia",
+        "Jurisdiction": 5,
+        "FIPS": "51059",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1983,
+        "Station_Number": 50,
+        "ADDRESS": "2701 HUNTINGTON AVENUE, ALEXANDRIA, VA",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#C15|Huntington"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.07536793442131,
+          38.793866569740466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 75,
+        "Network_Node": 8040,
+        "NAME": "Anacostia",
+        "Station_Name": "Anacostia",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/anacostia.cfm",
+        "LINE": "Green",
+        "SEQNO": 40,
+        "Parking": "Y",
+        "XCoord": -76.99537301842126,
+        "YCoord": 38.86297089635679,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1991,
+        "Station_Number": 85,
+        "ADDRESS": "1101 HOWARD ROAD SE, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#F06|Anacostia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.99552524849776,
+          38.86293990363583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 76,
+        "Network_Node": 8073,
+        "NAME": "Eastern Market",
+        "Station_Name": "Eastern Market",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/eastern-market.cfm",
+        "LINE": "Blue, Orange, Silver",
+        "SEQNO": 73,
+        "Parking": "N",
+        "XCoord": -76.99600340829632,
+        "YCoord": 38.8846300457618,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": "ORANGE",
+        "Line3": "SILVER",
+        "Line4": null,
+        "Year": 1977,
+        "Station_Number": 60,
+        "ADDRESS": "725 PENNSYLVANIA AVENUE SE, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#D06|Eastern%20Market"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.99598392840818,
+          38.884691204920315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 77,
+        "Network_Node": 8074,
+        "NAME": "Potomac Ave",
+        "Station_Name": "Potomac Ave",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/potomac-ave.cfm",
+        "LINE": "Blue, Orange, Silver",
+        "SEQNO": 74,
+        "Parking": "N",
+        "XCoord": -76.98549759767646,
+        "YCoord": 38.88127105786087,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": "ORANGE",
+        "Line3": "SILVER",
+        "Line4": null,
+        "Year": 1977,
+        "Station_Number": 61,
+        "ADDRESS": "1400 POTOMAC AVENUE SE, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#D07|Potomac%20Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.98549980090698,
+          38.881356950035965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 78,
+        "Network_Node": 8075,
+        "NAME": "Stadium-Armory",
+        "Station_Name": "Stadium-Armory",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/stadium-armory.cfm",
+        "LINE": "Blue, Orange, Silver",
+        "SEQNO": 75,
+        "Parking": "N",
+        "XCoord": -76.97709117756743,
+        "YCoord": 38.88671687512772,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": "ORANGE",
+        "Line3": "SILVER",
+        "Line4": null,
+        "Year": 1977,
+        "Station_Number": 63,
+        "ADDRESS": "290 19TH STREET SE, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#D08|Stadium-Armory"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.97717964177653,
+          38.88672382345175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 79,
+        "Network_Node": 8019,
+        "NAME": "Rhode Island Ave-Brentwood",
+        "Station_Name": "Rhode Island Ave-Brentwood",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/rhode-island-ave.cfm",
+        "LINE": "Red",
+        "SEQNO": 19,
+        "Parking": "Y",
+        "XCoord": -76.99593920055558,
+        "YCoord": 38.921067481262384,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1976,
+        "Station_Number": 26,
+        "ADDRESS": "801 RHODE ISLAND AVENUE NE, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#B04|Rhode%20Island%20Ave-Brentwood"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.99595294164605,
+          38.92108000811022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 80,
+        "Network_Node": 8076,
+        "NAME": "Minnesota Ave",
+        "Station_Name": "Minnesota Ave",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/minnesota-ave.cfm",
+        "LINE": "Orange",
+        "SEQNO": 76,
+        "Parking": "Y",
+        "XCoord": -76.94674999993266,
+        "YCoord": 38.89919901254771,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1978,
+        "Station_Number": 64,
+        "ADDRESS": "4120 MINNESOTA AVENUE NE, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#D09|Minnesota%20Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.94675000046715,
+          38.89919901288103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 81,
+        "Network_Node": 8010,
+        "NAME": "Van Ness-UDC",
+        "Station_Name": "Van Ness-UDC",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/van-ness.cfm",
+        "LINE": "Red",
+        "SEQNO": 10,
+        "Parking": "N",
+        "XCoord": -77.06298848629507,
+        "YCoord": 38.94327308264916,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1981,
+        "Station_Number": 9,
+        "ADDRESS": "4230 CONNECTICUT AVENUE NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#A06|Van%20Ness-UDC"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.06340632275311,
+          38.94411803158345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 82,
+        "Network_Node": 8011,
+        "NAME": "Cleveland Park",
+        "Station_Name": "Cleveland Park",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/cleveland-park.cfm",
+        "LINE": "Red",
+        "SEQNO": 11,
+        "Parking": "N",
+        "XCoord": -77.05804482293925,
+        "YCoord": 38.934770683441215,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1981,
+        "Station_Number": 8,
+        "ADDRESS": "3514 CONNECTICUT AVENUE NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#A05|Cleveland%20Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.05872069425023,
+          38.93606046656004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 83,
+        "Network_Node": 8032,
+        "NAME": "Columbia Heights",
+        "Station_Name": "Columbia Heights",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/columbia-heights.cfm",
+        "LINE": "Green",
+        "SEQNO": 32,
+        "Parking": "N",
+        "XCoord": -77.03255441274128,
+        "YCoord": 38.92784575977213,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1999,
+        "Station_Number": 75,
+        "ADDRESS": "3030 14TH STREET NW, WASHINGTON, DC",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#E04|Columbia%20Heights"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.03271625686939,
+          38.92904662022503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 84,
+        "Network_Node": 8089,
+        "NAME": "Spring Hill",
+        "Station_Name": "Spring Hill",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/spring-hill.cfm",
+        "LINE": "Silver",
+        "SEQNO": 90,
+        "Parking": "N",
+        "XCoord": -77.24156035292195,
+        "YCoord": 38.92895962711715,
+        "State": "Virginia",
+        "Jurisdiction": 5,
+        "FIPS": "51059",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 2014,
+        "Station_Number": 114,
+        "ADDRESS": "1576 SPRING HILL ROAD VIENNA, VA 22182",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#N04|Spring%20Hill"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.24156035279073,
+          38.92895962745084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 85,
+        "Network_Node": 8090,
+        "NAME": "Greensboro",
+        "Station_Name": "Greensboro",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/greensboro.cfm",
+        "LINE": "Silver",
+        "SEQNO": 89,
+        "Parking": "N",
+        "XCoord": -77.23388019675566,
+        "YCoord": 38.920963175506685,
+        "State": "Virginia",
+        "Jurisdiction": 5,
+        "FIPS": "51059",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 2014,
+        "Station_Number": 113,
+        "ADDRESS": "8305 LEESBURG PIKE VIENNA, VA 22182",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#N03|Greensboro"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.23388019715787,
+          38.92096317614983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 86,
+        "Network_Node": 8088,
+        "NAME": "Tysons",
+        "Station_Name": "Tysons",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/tysons.cfm",
+        "LINE": "Silver",
+        "SEQNO": 88,
+        "Parking": "N ",
+        "XCoord": -77.22171803734176,
+        "YCoord": 38.92068205304503,
+        "State": "Virginia",
+        "Jurisdiction": 5,
+        "FIPS": "51059",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 2014,
+        "Station_Number": 112,
+        "ADDRESS": "1943 CHAIN BRIDGE ROAD MCLEAN, VA 22102",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#N02|Tysons%20Corner"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.22171803643003,
+          38.92068205293983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 87,
+        "Network_Node": 8087,
+        "NAME": "McLean",
+        "Station_Name": "McLean",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/mclean.cfm",
+        "LINE": "Silver",
+        "SEQNO": 87,
+        "Parking": "N",
+        "XCoord": -77.21008129397356,
+        "YCoord": 38.92452954969211,
+        "State": "Virginia",
+        "Jurisdiction": 5,
+        "FIPS": "51059",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 2014,
+        "Station_Number": 111,
+        "ADDRESS": "1824 DOLLEY MADISON BOULIVARD MCLEAN, VA 22102",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#N01|McLean"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.21008129427837,
+          38.92452954966262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 88,
+        "Network_Node": 8091,
+        "NAME": "Wiehle-Reston East",
+        "Station_Name": "Wiehle-Reston East",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/wiehle-reston.cfm",
+        "LINE": "Silver",
+        "SEQNO": 91,
+        "Parking": "Y",
+        "XCoord": -77.34006221623507,
+        "YCoord": 38.94774066340996,
+        "State": "Virginia",
+        "Jurisdiction": 5,
+        "FIPS": "51059",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 2014,
+        "Station_Number": 115,
+        "ADDRESS": "1862 WIEHLE AVENUE RESTON, VA 20190",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#N06|Wiehle-Reston%20East"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.34006221574613,
+          38.94774066319087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 89,
+        "Network_Node": 8092,
+        "NAME": "Reston Town Center",
+        "Station_Name": "Reston Town Center",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/reston.cfm",
+        "LINE": "Silver",
+        "SEQNO": 92,
+        "Parking": "N",
+        "XCoord": -77.36056455131578,
+        "YCoord": 38.953003831589484,
+        "State": "Virginia",
+        "Jurisdiction": 5,
+        "FIPS": "51059",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 2022,
+        "Station_Number": 116,
+        "ADDRESS": "12023-A SUNSET HILLS RD, RESTON, VA 20190",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#N07|Reston%20Town%20Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.36056455049747,
+          38.953003832096336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 90,
+        "Network_Node": 8093,
+        "NAME": "Herndon",
+        "Station_Name": "Herndon",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/herndon.cfm",
+        "LINE": "Silver",
+        "SEQNO": 93,
+        "Parking": "Y",
+        "XCoord": -77.38178365398664,
+        "YCoord": 38.952513618821534,
+        "State": "Virginia",
+        "Jurisdiction": 5,
+        "FIPS": "51059",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 2022,
+        "Station_Number": 117,
+        "ADDRESS": "585-A HERNDON PKY, HERNDON, VA 20170",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#N08|Herndon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.38178365397364,
+          38.95251361887431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 91,
+        "Network_Node": 8094,
+        "NAME": "Innovation Center",
+        "Station_Name": "Innovation Center",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/innovation-center.cfm",
+        "LINE": "Silver",
+        "SEQNO": 94,
+        "Parking": "Y",
+        "XCoord": -77.4145522173304,
+        "YCoord": 38.95960138041599,
+        "State": "Virginia",
+        "Jurisdiction": 5,
+        "FIPS": "51059",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 2022,
+        "Station_Number": 118,
+        "ADDRESS": "13747-A SUNRISE VALLEY DR, HERNDON, VA 20171",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#N09|Innovation%20Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.41455221719326,
+          38.959601379561995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 92,
+        "Network_Node": 8095,
+        "NAME": "Washington Dulles International Airport",
+        "Station_Name": "Washington Dulles International Airport",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/washington-dulles.cfm",
+        "LINE": "Silver",
+        "SEQNO": 95,
+        "Parking": "N",
+        "XCoord": -77.44458049845868,
+        "YCoord": 38.95654486229414,
+        "State": "Virginia",
+        "Jurisdiction": 6,
+        "FIPS": "51107",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 2022,
+        "Station_Number": 119,
+        "ADDRESS": "44920 SAARINEN CIR, DULLES, VA 20166",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#N10|Washington%20Dulles%20International%20Airport"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.44458049853188,
+          38.956544862128816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 93,
+        "Network_Node": 8096,
+        "NAME": "Loudoun Gateway",
+        "Station_Name": "Loudoun Gateway",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/loudoun.cfm",
+        "LINE": "Silver",
+        "SEQNO": 96,
+        "Parking": "Y",
+        "XCoord": -77.46073101022829,
+        "YCoord": 38.9906065107409,
+        "State": "Virginia",
+        "Jurisdiction": 6,
+        "FIPS": "51107",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 2022,
+        "Station_Number": 120,
+        "ADDRESS": "22505-A LOCK RIDGE RD, STERLING, VA 20166",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#N11|Loudoun%20Gateway"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.46073100985923,
+          38.99060651090379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 94,
+        "Network_Node": 8097,
+        "NAME": "Ashburn",
+        "Station_Name": "Ashburn",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/ashburn.cfm",
+        "LINE": "Silver",
+        "SEQNO": 97,
+        "Parking": "Y",
+        "XCoord": -77.4922769049514,
+        "YCoord": 39.0059777110131,
+        "State": "Virginia",
+        "Jurisdiction": 6,
+        "FIPS": "51107",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 2022,
+        "Station_Number": 121,
+        "ADDRESS": "43625-A CROSON LN, ASHBURN, VA 20147",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#N12|Ashburn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.49227690442623,
+          39.00597771107059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 95,
+        "Network_Node": 8084,
+        "NAME": "Potomac Yard",
+        "Station_Name": "Potomac Yard",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/potomac-yard.cfm",
+        "LINE": "Blue, Yellow",
+        "SEQNO": 98,
+        "Parking": "N",
+        "XCoord": -77.0464044,
+        "YCoord": 38.8340059,
+        "State": "Virginia",
+        "Jurisdiction": 4,
+        "FIPS": "51510",
+        "Line2": "YELLOW",
+        "Line3": null,
+        "Line4": null,
+        "Year": 2023,
+        "Station_Number": null,
+        "ADDRESS": "2900 POTOMAC GREENS DRIVE, ALEXANDRIA, VA 22314 ",
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#C11|Potomac%20Yard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.04640439983753,
+          38.83400589969316
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 96,
+        "Network_Node": 8028,
+        "NAME": "College Park-U of MD",
+        "Station_Name": "College Park-U of MD",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/college-park.cfm",
+        "LINE": "Green",
+        "SEQNO": 28,
+        "Parking": "Y",
+        "XCoord": -76.92812724748374,
+        "YCoord": 38.978641439882566,
+        "State": "Maryland",
+        "Jurisdiction": 2,
+        "FIPS": "24033",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1993,
+        "Station_Number": 79,
+        "ADDRESS": null,
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#E09|College%20Park-U%20of%20Md"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.92825553407668,
+          38.97871962957047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 97,
+        "Network_Node": 8068,
+        "NAME": "McPherson Square",
+        "Station_Name": "McPherson Square",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/mcpherson-sq.cfm",
+        "LINE": "Blue, Orange, Silver",
+        "SEQNO": 68,
+        "Parking": "N",
+        "XCoord": -77.03363646641714,
+        "YCoord": 38.90134058284703,
+        "State": "District of Columbia",
+        "Jurisdiction": 0,
+        "FIPS": "11001",
+        "Line2": "ORANGE",
+        "Line3": "SILVER",
+        "Line4": null,
+        "Year": 1977,
+        "Station_Number": 36,
+        "ADDRESS": null,
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#C02|McPherson%20Square"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.03457509602646,
+          38.90139602923961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 98,
+        "Network_Node": 8049,
+        "NAME": "Eisenhower Avenue",
+        "Station_Name": "Eisenhower Avenue",
+        "WEB_URL": "https://www.wmata.com/rider-guide/stations/eisenhower-ave.cfm",
+        "LINE": "Yellow",
+        "SEQNO": 49,
+        "Parking": "N",
+        "XCoord": -77.07087668900878,
+        "YCoord": 38.80043321433552,
+        "State": "Virginia",
+        "Jurisdiction": 4,
+        "FIPS": "51510",
+        "Line2": null,
+        "Line3": null,
+        "Line4": null,
+        "Year": 1983,
+        "Station_Number": 49,
+        "ADDRESS": null,
+        "TRAININFO_URL": "https://www.wmata.com/js/nexttrain/nexttrain.html#C14|Eisenhower%20Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.07113293430498,
+          38.800409410724185
+        ]
+      }
+    }
+  ]
+}

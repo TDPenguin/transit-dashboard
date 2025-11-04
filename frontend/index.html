@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>WMATA Transit Dashboard</h1>
+    <h1>WMATA Dashboard</h1>
     
     <!-- Left panel: shows the list of stations -->
     <div id="left-panel">
@@ -26,7 +26,10 @@
     <div id="right-panel">
         <div id="map"></div> <!-- Map goes here -->
         <div id="station-details">
-            <p>Click on a station in the list or on the map to view details</p>
+            <button id="close-details" class="close-btn" style="display: none;">&times;</button>
+            <div id="station-details-content">
+                <p>Click on a station in the list or on the map to view details</p>
+            </div>
         </div>
     </div>
 

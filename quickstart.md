@@ -1,66 +1,62 @@
 # Quick Start Guide
 
-## 1. Clean Previous Builds (optional)
-Removes the `/dist` folder:
+## Development (Two Terminals)
 
+**Terminal 1:** TypeScript watch (auto-compile on save)
 ```sh
-npm run clean
+cd frontend
+npm run watch
 ```
 
-## 2. Build the Frontend
-Compiles TypeScript to JavaScript in `/dist`:
-
+**Terminal 2:** Go server (serves both API and frontend)
 ```sh
-npm run build
+cd backend
+go run .
 ```
 
-## 3. Serve the Frontend
-Start a local server in the `frontend` folder (choose one):
+Then open **http://localhost:8080** in your browser.
 
-**Using npx:**
+Edit `script.ts` → Save → Refresh browser (F5) → See changes.
+
+---
+
+## Quick Run (One Terminal)
+
+Build TypeScript once, then run Go:
 ```sh
-npx serve .
-```
-**Or with Python:**
-```sh
-python -m http.server 3000
-```
-
-Then open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## 4. Start the Backend
-In a separate terminal, from the `backend` folder:
-
-```sh
-go run main.go
+cd frontend; npm run build; cd ../backend; go run .
 ```
 
-## 5. View the App
-- Open your browser to [http://localhost:3000](http://localhost:3000)
-- You should see the WMATA stations list.
+Open **http://localhost:8080** in your browser.
+
+When you edit `script.ts`, rebuild with:
+```sh
+cd frontend; npm run build
+```
+Then refresh browser.
 
 ---
 
 ## Troubleshooting
 
-- **No stations?**  
-  Make sure the Go backend is running and your frontend is built.
-- **Build errors?**  
-  Check your TypeScript files and `tsconfig.json`.
-- **Script errors?**  
-  Open the browser console (F12) for details.
+- **No stations showing?**  
+  Backend still loading. Check terminal for "Cache pre-warmed successfully!"
+  
+- **TypeScript errors?**  
+  Check `tsconfig.json` and run `npm run build` to see errors.
+  
+- **Map not showing?**  
+  Open browser console (F12) for errors.
+  
+- **Changes not showing?**  
+  Make sure TypeScript compiled (check terminal 1) and you refreshed browser (F5).
 
 ---
 
-## Common Commands
+## Useful Commands
 
-- Clean: `npm run clean`
-- Build: `npm run build`
-- Serve: `npx serve .`
-- Backend: `go run main.go`
-- 
-#### Quick Commands
-Go: `cd backend; cls; go run main.go`
-
-TypeScript: `cd frontend; cls; npm run build; npx serve .`
+- `npm run build` - Compile TypeScript once
+- `npm run watch` - Auto-compile on save
+- `npm run clean` - Delete compiled files
+- `go run .` - Start Go server (from backend folder)
 
